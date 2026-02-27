@@ -25,7 +25,7 @@ I'm passionate about leveraging data science, machine learning, and computer sci
 ## 🎓 Education
 
 - **Master of Science in Data Science** - Queen Mary University of London  
-- **Bachelor of Engineering in Computer Science** - Your Undergraduate University
+- **Bachelor of Engineering in Computer Science** - Mysore Royal Institute of Technology
 
 ---
 
@@ -57,6 +57,11 @@ I'm passionate about leveraging data science, machine learning, and computer sci
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=power-bi&logoColor=black)
 
+**Engineering & GIS:**  
+![QGIS](https://img.shields.io/badge/QGIS-589632?style=flat&logo=qgis&logoColor=white)
+![AutoCAD](https://img.shields.io/badge/AutoCAD-E51937?style=flat&logo=autodesk&logoColor=white)
+![STAAD Pro](https://img.shields.io/badge/STAAD%20Pro-0696D7?style=flat)
+
 ---
 
 ## 📂 Featured Projects
@@ -70,7 +75,7 @@ This project uses deep learning and convolutional neural networks (CNNs) to reco
 ### 📝 [Student Online Attendance Management](#)
 An online attendance management system that tracks student and employee attendance in institutes. It records the exact time students are present and when they leave, providing complete attendance data through online software.
 
-### 🗼 [Tower of Hanoi (2022)](#)
+### 🗼 [Tower of Hanoi](#)
 A classic puzzle where disks are stacked on one rod in decreasing size order. The objective is to move the entire stack to another rod, following the rules of the puzzle, effectively demonstrating algorithmic thinking and recursion.
 
 ---
