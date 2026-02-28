@@ -5,149 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio for Yashaswini Talakadu Vijaykumar featuring data science projects and analytics expertise."
+      content="Portfolio for Kushala Rani Talakad Manjunath featuring data science projects, analytics skills, and applied mathematics experience."
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Yashaswini Talakadu Vijaykumar | Portfolio</title>
+    <title>Kushala Rani Talakad Manjunath | Portfolio</title>
   </head>
-
   <body>
-    <!-- HEADER -->
     <header class="site-header">
       <div class="container">
-        <a class="brand" href="#hero">
+        <a class="brand" href="#hero" aria-label="Home">
           <img class="brand-logo" src="assets/images/km-logo.png" alt="KM logo" />
         </a>
-
-        <nav class="site-nav">
-          <ul class="site-nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a class="resume-link" href="assets/resume/resume.pdf" target="_blank">
-                Resume
-              </a>
-            </li>
-          </ul>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav-list">
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+            <span class="sr-only">Menu</span>
+          </button>
+          <div class="nav-actions">
+            <ul id="site-nav-list" class="site-nav-list" data-open="false">
+              <li><a href="#about">About</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#community">Community</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a class="resume-link" href="assets/resume/resume.pdf" target="_blank" rel="noopener"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle color theme">
+              <img class="theme-icon" src="assets/icons/theme-light.svg" alt="" aria-hidden="true" />
+            </button>
+          </div>
         </nav>
       </div>
     </header>
 
     <main>
-
-      <!-- HERO -->
       <section id="hero" class="hero">
-        <div class="container">
-          <h1>Yashaswini Talakadu Vijaykumar</h1>
-          <p>Data Science Graduate | Machine Learning | Analytics</p>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="section">
-        <div class="container">
-          <h2>About</h2>
-          <p>
-            Data Science graduate with strong foundations in machine learning,
-            applied statistics, and engineering. Passionate about transforming
-            complex data into actionable insights that drive impact.
-          </p>
-        </div>
-      </section>
-
-      <!-- EDUCATION -->
-      <section id="education" class="section">
-        <div class="container">
-          <h2>Education</h2>
-
-          <h3>Queen Mary University of London</h3>
-          <p>M.S. Data Science · Merit</p>
-
-          <h3>Mysore Royal Institute of Technology</h3>
-          <p>B.E. Computer Science Engineering · CGPA 7.0</p>
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="section">
-        <div class="container">
-          <h2>Projects</h2>
-
-          <div class="projects-grid">
-
-            <article class="project-card">
-              <h3>Scientometric Analysis of Machine Learning</h3>
-              <p>
-                Analyzed global ML research trends using bibliometric methods
-                to identify influential authors and emerging topics.
-              </p>
-            </article>
-
-            <article class="project-card">
-              <h3>Facial Expression Detection (Deep Learning)</h3>
-              <p>
-                Built a CNN-based model to classify human facial expressions
-                with applications in autism research and deepfake detection.
-              </p>
-            </article>
-
-            <article class="project-card">
-              <h3>Online Attendance Management System</h3>
-              <p>
-                Developed a web-based system to track real-time attendance
-                and generate structured institutional records.
-              </p>
-            </article>
-
-            <article class="project-card">
-              <h3>Tower of Hanoi – Recursive Algorithm</h3>
-              <p>
-                Implemented a recursive algorithm demonstrating strong
-                problem-solving and algorithmic thinking skills.
-              </p>
-            </article>
-
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              Applied Mathematics Graduate | GIS Analyst | Financial Analyst | GIS/Engineering Analyst
+            </p>
+            <h1 class="display-algerian">Kushala Rani<br /><span class="nowrap">Talakad&nbsp;Manjunath</span></h1>
+            <p class="hero-subhead">Transforming complex data into strategic insights that drive impact.</p>
+            <p class="lead">
+              Applied mathematics graduate blending engineering precision with machine learning innovation. I build
+              end-to-end analytical solutions—from deep learning models and predictive systems to compelling
+              visualizations that empower education programs and guide data-driven decisions grounded in evidence.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">Browse Case Studies</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img class="hero-photo" src="assets/images/photo.png" alt="Portrait of Kushala Rani Talakad Manjunath" />
           </div>
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section">
+      <section id="about" class="section section-alt">
         <div class="container">
-          <h2>Contact</h2>
-
-          <p>Email: 
-            <a href="mailto:yashaswinitv27@gmail.com">
-              yashaswinitv27@gmail.com
-            </a>
-          </p>
-
-          <p>Phone: 
-            <a href="tel:+447887121726">
-              +44 7887 121726
-            </a>
-          </p>
-
-          <p>
-            <a href="https://www.linkedin.com/in/yashaswinitalakaduvijaykumar/"
-              target="_blank">LinkedIn</a> |
-            <a href="https://github.com/yashaswinitv"
-              target="_blank">GitHub</a>
-          </p>
+          <h2 class="display-algerian display-algerian-underline">About</h2>
+          <div class="paragraph-stack">
+            <p>
+              I'm a problem-solver at heart, combining the precision of engineering with the power of mathematics to tackle real-world challenges through data. With an MS in Applied Mathematics from Northeastern University and a foundation in Civil Engineering, I bring a unique perspective to data analysis; one grounded in both rigorous mathematical theory and practical application. My work spans from detecting gravitational waves using deep learning to forecasting financial markets, from analyzing climate patterns for infrastructure planning to optimizing educational programs serving underrepresented students.
+            </p>
+            <p>
+              What drives me is the moment when complex data reveals its story. Whether I'm building predictive models in Python, conducting statistical analysis in R, or creating spatial visualizations with GIS, I'm constantly seeking patterns that inform better decisions. My engineering background taught me to think systematically about problems; my mathematical training gave me the tools to solve them with precision. Beyond the technical work, I'm passionate about making STEM accessible. I've mentored over 100 students, helping them discover their own analytical capabilities, an experience that's sharpened my ability to communicate complex ideas clearly and work effectively across diverse teams. Currently, I'm seeking opportunities where analytical rigor meets practical impact—roles in data science, financial analysis, or engineering where I can leverage my interdisciplinary expertise to drive meaningful outcomes. I thrive in environments that value curiosity, collaboration, and the transformative power of data-driven insights.
+            </p>
+            <p>
+              Let's connect if you're working on challenges that need both mathematical precision and creative problem-solving.
+            </p>
+          </div>
         </div>
       </section>
 
+      <section id="education" class="section">
+        <div class="container">
+          <h2 class="display-algerian display-algerian-underline">Education</h2>
+          <div class="timeline-grid">
+            <article class="timeline-card">
+              <header class="timeline-header">
+                <h3>Northeastern University</h3>
+                <span class="timeline-role">M.S. Applied Mathematics · GPA 3.524</span>
+              </header>
+              <div class="timeline-meta">
+                <span>Boston, MA</span>
+                <span>Jan 2024 – Dec 2025</span>
+              </div>
+              <p>
+                Graduate coursework across deep learning, applied statistics, and numerical analysis with
+                research-driven projects that pair mathematical rigor with deployable machine learning solutions.
+              </p>
+              <div class="detail-pill-group">
+                <span class="detail-pill">Neural Networks</span>
+                <span class="detail-pill">Machine Learning</span>
+                <span class="detail-pill">Applied Statistics</span>
+                <span class="detail-pill">Numerical Analysis</span>
+              </div>
+            </article>
+            <article class="timeline-card">
+              <header class="timeline-header">
+                <h3>JSS Science and Technology University</h3>
+                <span class="timeline-role">B.E. Civil Engineering · CGPA 8.83</span>
+              </header>
+              <div class="timeline-meta">
+                <span>Mysore, India</span>
+                <span>Aug 2019 – Jul 2023</span>
+              </div>
+              <p>
+                Built a strong foundation in structural analysis, geospatial technologies, transportation systems, and
+                design—skills that complement data-driven modeling and decision making.
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container contact-card">
+          <div>
+            <h2 class="display-algerian display-algerian-underline">Let's Connect</h2>
+            <p>
+              I'm always excited to explore opportunities where applied mathematics and civil engineering create measurable
+              impact. Reach out to collaborate on research, join forces on a project, or chat about the latest in data-driven engineering.
+            </p>
+            <dl class="contact-meta">
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:talakadmanjunath.k@northeastern.edu">talakadmanjunath.k@northeastern.edu</a></dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+18573967447">(857) 396-7447</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Boston, MA</dd>
+              </div>
+            </dl>
+            <blockquote class="signature-quote">
+              "The best way to predict the future is to create it through engineering, data-driven insights, and
+              mathematical precision."
+            </blockquote>
+          </div>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:talakadmanjunath.k@northeastern.edu">
+              <img class="button-icon" src="assets/icons/email.svg" alt="" aria-hidden="true" />
+              <span>Email</span>
+            </a>
+            <a
+              class="button secondary"
+              href="https://www.linkedin.com/in/kushala-rani/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img class="button-icon" src="assets/icons/linkedin.svg" alt="" aria-hidden="true" />
+              <span>LinkedIn</span>
+            </a>
+            <a
+              class="button secondary"
+              href="https://github.com/Kushala-Manjunath"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img class="button-icon" src="assets/icons/github.svg" alt="" aria-hidden="true" />
+              <span>GitHub</span>
+            </a>
+            <a class="button secondary" href="tel:+18573967447">
+              <img class="button-icon" src="assets/icons/phone.svg" alt="" aria-hidden="true" />
+              <span>Call</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>© 2026 Yashaswini Talakadu Vijaykumar</p>
+        <p>
+          © <span id="year"></span> Kushala Rani Talakad Manjunath. Crafted for data-driven storytelling and hosted on
+          GitHub Pages.
+        </p>
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
