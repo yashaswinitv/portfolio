@@ -1,178 +1,198 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Resume — Yashaswini Talakadu Vijaykumar</title>
-    <style>
-      :root {
-        --text: #111;
-        --muted: #444;
-        --rule: #333;
-        --accent: #0c4a6e;
-        --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-          Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-          Arial, sans-serif;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yashaswini | Portfolio</title>
 
-      html { font-size: 11pt; }
-      body {
-        color: var(--text);
-        font-family: var(--font);
-        line-height: 1.35;
-        margin: 0;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-      .page {
-        width: 210mm; /* A4 width */
-        min-height: calc(297mm - 30mm); /* A4 height minus margins */
-        margin: 15mm auto; /* 15mm all sides visually; print uses @page */
-        padding: 0;
-      }
-      .content { padding: 0 14mm; }
+  <style>
+    :root {
+      --text: #111;
+      --muted: #555;
+      --accent: #0c4a6e;
+      --bg: #f9fafb;
+    }
 
-      header { text-align: center; margin-bottom: 6mm; }
-      header h1 {
-        font-size: 20pt;
-        margin: 0 0 4mm 0;
-        letter-spacing: 0.2px;
-      }
-      .contact {
-        color: var(--muted);
-        font-size: 10pt;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px 12px;
-        justify-content: center;
-      }
-      .contact a { color: var(--accent); text-decoration: none; }
-      .contact a:hover { text-decoration: underline; }
-      .sep::before { content: "·"; margin: 0 6px; color: var(--muted); }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-      h2 {
-        font-size: 12pt;
-        text-transform: uppercase;
-        letter-spacing: 0.6px;
-        margin: 10mm 0 3mm;
-        padding-bottom: 2mm;
-        border-bottom: 1px solid var(--rule);
-      }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
 
-      .summary { margin-top: 0; }
-      .summary p { margin: 0; }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-      /* Definition rows for skills */
-      .defs { display: grid; grid-template-columns: 160px 1fr; gap: 2mm 6mm; }
-      .defs .term { font-weight: 600; color: var(--text); }
-      .defs .desc { color: var(--text); }
+    h1 {
+      margin-bottom: 5px;
+    }
 
-      /* Experience / Projects items */
-      .item { break-inside: avoid; margin: 4mm 0 0; }
-      .item .row {
-        display: flex; align-items: baseline; justify-content: space-between;
-        gap: 10px; flex-wrap: wrap;
-      }
-      .item .title { font-weight: 700; }
-      .item .meta { color: var(--muted); }
-      .item ul { margin: 2mm 0 0 5mm; padding: 0 0 0 3mm; }
-      .item li { margin: 1.2mm 0; }
+    .contact a {
+      margin: 0 8px;
+      text-decoration: none;
+      color: var(--accent);
+    }
 
-      /* Print setup */
-      @page { size: A4; margin: 12mm; }
-      @media print {
-        .page { margin: 0; width: auto; }
-        a[href^="http"]::after { content: ""; } /* hide link URLs */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <div class="content">
-        <header>
-          <h1>Yashaswini Talakadu Vijaykumar</h1>
-          <div class="contact">
-            <a href="https://github.com/yashaswinitv">GitHub</a>
-            <span class="sep"></span>
-            <a href="https://www.linkedin.com/in/yashaswini-tv-62b27b211">LinkedIn</a>
-            <span class="sep"></span>
-            <a href="mailto:yashaswinitv27@gmail.com">yashaswinitv27@gmail.com</a>
-            <span class="sep"></span>
-            <a href="tel:+447887121726">(44)7887121726</a>
-            <span class="sep"></span>
-            <span>London, UK</span>
-          </div>
-        </header>
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
 
-        <section class="summary">
-          <h2>Summary</h2>
-          <p>
-            Graduate student in Data Science with expertise in SQL, Python,
-            R and statistical analysis for data-driven decision-making. Skilled in
-            extracting, cleaning, and modeling complex datasets, building predictive
-            models, and creating insightful visualizations. Strong communicator with
-            proven ability to translate analytics into actionable business
-            recommendations.
-          </p>
-        </section>
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
 
-        <section>
-          <h2>Education</h2>
-          <div class="item">
-            <div class="row">
-              <div class="title">Queen Mary University of London — London, UK</div>
-              <div class="meta">Jan 2024 — Dec 2025</div>
-            </div>
-            <div class="meta">Master of Science in Data Science, Grade:Merit</div>
-            <div>Relevant Courses: Neural Networks and Deep Learning, Machine Learning, Applied Statistics, Numerical Analysis</div>
-          </div>
-        </section>
+    .card:hover {
+      transform: scale(1.01);
+      transition: 0.2s;
+    }
 
-        <section>
-          <h2>Skills</h2>
-          <div class="defs">
-            <div class="term">Programming Languages</div>
-            <div class="desc">Python, R, MATLAB, SQL, C</div>
-        <section>
-          <h2>Work Experience</h2>
-          <div class="item">
-            <div class="row">
-              <div class="title">Demonstrator — London, UK</div>
-              <div class="meta">may 2025 — jan 2026</div>
-            </div>
-            <ul>
-              <li>Demonstrated big data processing techniques and tools, helping learners understand complex workflows and interpret results effectively.</li>
-              <li>Assisted students at Queen Mary University of London with hands-on big data processing exercises, guiding them through practical applications of large-scale data analysis.</li>
-            </ul>
-          </div>
+    ul {
+      padding-left: 18px;
+    }
+  </style>
+</head>
 
-         
-        </section>
+<body>
+<div class="container">
 
-        <section>
-          <h2>Projects</h2>
-          <div class="item">
-            <div class="row">
-              <div class="title">cientometric analysis of machine learning project</div>
-              <div class="meta">May 2025 — Sep 2025</div>
-            </div>
-            <div>Conducted a scientometric analysis of machine learning research, examining publication trends, influential authors, and key research areas to map the evolution of the field.</div>
-          </div>
+<header>
+  <h1>Yashaswini Talakadu Vijaykumar</h1>
+  <p>AI/ML Engineer | Big Data Enthusiast</p>
+  <div class="contact">
+    <a href="https://github.com/yashaswinitv">GitHub</a>
+    <a href="https://www.linkedin.com/in/yashaswini-tv-62b27b211">LinkedIn</a>
+    <a href="mailto:yashaswinitv27@gmail.com">Email</a>
+  </div>
+</header>
 
-          <div class="item">
-            <div class="row">
-              <div class="title">facial recognition (ML)</div>
-              <div class="meta">Jan 2023 — Apr 2023</div>
-            </div>
-            <div>Graduate project  facial recognition system using machine learning algorithms to accurately detect and identify faces from images and video streams.</div>
-          </div>
-        </section>
+<section>
+  <h2>Summary</h2>
+  <div class="card">
+    AI/ML Engineer with experience in building scalable machine learning pipelines, performing data analysis, and developing real-time data visualization systems. Skilled in Python, Apache Spark, and data-driven problem solving.
+  </div>
+</section>
 
-        <section>
-          <h2>Volunteer Experience</h2>
-          <div>Academic support instructor at NGO “Make A Difference,” teaching computer science to final‑year high school students for two years.</div>
-        </section>
-      </div>
-    </div>
-  </body>
-  </html>
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <strong>Queen Mary University of London</strong><br>
+    MSc Big Data (2024 – 2025) | Merit
+  </div>
+
+  <div class="card">
+    <strong>Bachelor of Engineering – Computer Engineering</strong><br>
+    MRIT, India (2019 – 2023) | CGPA: 7.0
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="card">
+    <p><strong>Languages:</strong> Python, Java, C++, JavaScript</p>
+    <p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn</p>
+    <p><strong>Big Data:</strong> Apache Spark, Distributed Processing</p>
+    <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</p>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="card">
+    <strong>Software Engineer — JPMorgan Chase & Co.</strong><br>
+    Jan 2026 – Mar 2026
+    <ul>
+      <li>Built a real-time data visualization system for financial data streams.</li>
+      <li>Integrated Perspective for high-performance analytics dashboards.</li>
+      <li>Debugged and optimized existing code for improved performance.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Data Analyst Simulation — Tata Group (Forage)</strong><br>
+    Feb 2024 – Dec 2024
+    <ul>
+      <li>Performed exploratory data analysis using Pandas and NumPy.</li>
+      <li>Built predictive models for customer risk classification.</li>
+      <li>Developed insights to support business decision-making.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Demonstrator — Queen Mary University of London</strong><br>
+    Jan 2025 – Dec 2025
+    <ul>
+      <li>Guided students in machine learning and Apache Spark workflows.</li>
+      <li>Supported distributed data processing implementations.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>AI Intern</strong><br>
+    Jul 2023
+    <ul>
+      <li>Developed machine learning models for classification and regression.</li>
+      <li>Built end-to-end ML pipelines from data processing to evaluation.</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="card">
+    <strong>Scientometric Analysis of Machine Learning</strong><br>
+    <p>Analyzed large-scale research publication datasets to identify trends and growth patterns in machine learning.</p>
+  </div>
+
+  <div class="card">
+    <strong>Facial Emotion Recognition</strong><br>
+    <p>Developed a computer vision system to classify human emotions from facial images.</p>
+  </div>
+
+  <div class="card">
+    <strong>Attendance Management System</strong><br>
+    <p>Designed a database-driven system for tracking and analyzing attendance data.</p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Publications & Patents</h2>
+  <div class="card">
+    <ul>
+      <li>IoT-Based Agricultural Robotic System for Underground Crop Detection (2023)</li>
+      <li>Machine Learning-Based Device for Customer Feedback Processing (2025)</li>
+      <li>Hybrid Power Generation System Using Arduino Controller (2023)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Achievements</h2>
+  <div class="card">
+    <ul>
+      <li>Delivered AI education to 100+ students as a volunteer educator.</li>
+      <li>Promoted awareness of AI and emerging technologies.</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
